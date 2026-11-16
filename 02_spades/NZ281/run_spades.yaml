@@ -1,0 +1,262 @@
+- STAGE: Before start
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Before_start_N6YNCW78VWUE1FHSI5LTS4UMRHKRZU5E
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: before_start
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Read_error_correction_YU8KT95CUVC95R5BPFXSNQ1DR7LE0V1S
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: ec_start
+- STAGE: Read error correction
+  args:
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/corrected/configs/config.info
+  config_dir: corrected
+  del_after:
+  - tmp/hammer_r4dcbjx5
+  job_uuid: SPAdes_Read_error_correction_CZIOEAD7BFUHYAHCLSDIFKG33P4YSOC8
+  mpi_support: false
+  output_files:
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/corrected/corrected.yaml
+  path: /usr/bin/spades-hammer
+  short_name: ec_runtool
+- STAGE: corrected reads compression
+  args:
+  - /usr/share/spades/spades_pipeline/supplemetary/compress_all.py
+  - --input_file
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/corrected/corrected.yaml
+  - --ext_python_modules_home
+  - /usr/share/spades
+  - --max_threads
+  - '8'
+  - --output_dir
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/corrected
+  - --gzip_output
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_corrected_reads_compression_V93MCVA96CGWF5BHY4495HRULY434EB0
+  mpi_support: false
+  output_files: []
+  path: /usr/bin/python3
+  short_name: ec_compress
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Read_error_correction_E5XUE7OOWWKZRTC1FY1HYH8GX5J27UR3
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: ec_finish
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Assembling_WK07MWFNCLPQWG7N4CN3EZ4YF37U5O9B
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: as_start
+- STAGE: K21
+  args:
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/K21/configs/config.info
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/K21/configs/careful_mode.info
+  config_dir: K21
+  del_after: []
+  job_uuid: SPAdes_K21_DI9M4DCGNK1SJW0TBO5ENBIWS82N25Y5
+  mpi_support: false
+  output_files: []
+  path: /usr/bin/spades-core
+  short_name: k21
+- STAGE: K33
+  args:
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/K33/configs/config.info
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/K33/configs/careful_mode.info
+  config_dir: K33
+  del_after: []
+  job_uuid: SPAdes_K33_BP625EVEOWY54N265RZJB1QSGYCBUHSM
+  mpi_support: false
+  output_files: []
+  path: /usr/bin/spades-core
+  short_name: k33
+- STAGE: K55
+  args:
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/K55/configs/config.info
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/K55/configs/careful_mode.info
+  config_dir: K55
+  del_after: []
+  job_uuid: SPAdes_K55_4ZA9CPCOY9PHV9HA81BIZJEGEKEBLCCI
+  mpi_support: false
+  output_files: []
+  path: /usr/bin/spades-core
+  short_name: k55
+- STAGE: K77
+  args:
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/K77/configs/config.info
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/K77/configs/careful_mode.info
+  config_dir: K77
+  del_after: []
+  job_uuid: SPAdes_K77_PAWHDTHP3ISYMKAYV5080CKTFQPM4GJV
+  mpi_support: false
+  output_files: []
+  path: /usr/bin/spades-core
+  short_name: k77
+- STAGE: K99
+  args:
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/K99/configs/config.info
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/K99/configs/careful_mode.info
+  config_dir: K99
+  del_after: []
+  job_uuid: SPAdes_K99_93H5ETSXSDRMG4TD2FZ6Y65YFSKOLJJ1
+  mpi_support: false
+  output_files: []
+  path: /usr/bin/spades-core
+  short_name: k99
+- STAGE: K127
+  args:
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/K127/configs/config.info
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/K127/configs/careful_mode.info
+  config_dir: K127
+  del_after: []
+  job_uuid: SPAdes_K127_BNA42TYDYRDRPGTH61KYLQG7NG15FT5S
+  mpi_support: false
+  output_files: []
+  path: /usr/bin/spades-core
+  short_name: k127
+- STAGE: Copy files
+  args:
+  - /usr/share/spades/spades_pipeline/supplemetary/copy_files.py
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/K127/before_rr.fasta
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/before_rr.fasta
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/K127/assembly_graph_after_simplification.gfa
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/assembly_graph_after_simplification.gfa
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/K127/final_contigs.fasta
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/contigs.fasta
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/K127/first_pe_contigs.fasta
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/first_pe_contigs.fasta
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/K127/strain_graph.gfa
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/strain_graph.gfa
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/K127/scaffolds.fasta
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/scaffolds.fasta
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/K127/scaffolds.paths
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/scaffolds.paths
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/K127/assembly_graph_with_scaffolds.gfa
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/assembly_graph_with_scaffolds.gfa
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/K127/assembly_graph.fastg
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/assembly_graph.fastg
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/K127/final_contigs.paths
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/contigs.paths
+  config_dir: ''
+  del_after:
+  - .bin_reads
+  - tmp/spades_57qe_nj6
+  job_uuid: SPAdes_Copy_files_RBTPNH1TMK1AD1RQHSAUQ9XK40BROJMP
+  mpi_support: false
+  output_files: []
+  path: /usr/bin/python3
+  short_name: copy_files
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Assembling_YTRA2MJXZ4NCSO8XG0DT77186RB0RSXU
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: as_finish
+- STAGE: Mismatch correction
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Mismatch_correction_7SQO4DNUGSH9FTOXTVY2ASTDBNX67CMT
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: mc_start
+- STAGE: Mismatch correction contigs
+  args:
+  - /usr/share/spades/spades_pipeline/supplemetary/correction_iteration_script.py
+  - --corrected
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/contigs.fasta
+  - --assembled
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/misc/assembled_contigs.fasta
+  - --assembly_type
+  - contigs
+  - --output_dir
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281
+  - --bin_home
+  - /usr/bin
+  config_dir: mismatch_corrector/contigs
+  del_after:
+  - mismatch_corrector/contigs/tmp
+  - tmp/corrector_606ek9cq
+  job_uuid: SPAdes_Mismatch_correction_contigs_IBQIUBRNYUPDGAG615MIRG99N405I6L8
+  mpi_support: false
+  output_files: []
+  path: /usr/bin/python3
+  short_name: mc_contigs
+- STAGE: Mismatch correction scaffolds
+  args:
+  - /usr/share/spades/spades_pipeline/supplemetary/correction_iteration_script.py
+  - --corrected
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/scaffolds.fasta
+  - --assembled
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/misc/assembled_scaffolds.fasta
+  - --assembly_type
+  - scaffolds
+  - --output_dir
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281
+  - --bin_home
+  - /usr/bin
+  config_dir: mismatch_corrector/scaffolds
+  del_after:
+  - mismatch_corrector/scaffolds/tmp
+  - tmp/corrector_wcpm8pn7
+  job_uuid: SPAdes_Mismatch_correction_scaffolds_27BV67MOIB0G2CB9UMOBIMFYQ3ZKSRTW
+  mpi_support: false
+  output_files: []
+  path: /usr/bin/python3
+  short_name: mc_scaffolds
+- STAGE: Mismatch correction
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Mismatch_correction_U5H0U5T58E8QC3KG1NLGIWSD6YP9F6DM
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: mc_finish
+- STAGE: Breaking scaffolds
+  args:
+  - /usr/share/spades/spades_pipeline/supplemetary/breaking_scaffolds_script.py
+  - --result_scaffolds_filename
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/scaffolds.fasta
+  - --misc_dir
+  - /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/misc
+  - --threshold_for_breaking_scaffolds
+  - '3'
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Breaking_scaffolds_JLSAJDEMC8IEX7YCT1VMHTJ12LRHQYG4
+  mpi_support: false
+  output_files: []
+  path: /usr/bin/python3
+  short_name: bs
+- STAGE: Terminate
+  args: []
+  config_dir: ''
+  del_after:
+  - configs
+  job_uuid: SPAdes_Terminate_DPH8JH13E31IDJV16AIVKKIJ2LXP4XMS
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: terminate

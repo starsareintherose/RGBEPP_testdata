@@ -1,0 +1,38 @@
+Command line: /usr/bin/spades.py	--pe1-1	/home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/01_fastp/NZ728_R1.fastq.gz	--pe1-2	/home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/01_fastp/NZ728_R2.fastq.gz	-t	8	-m	16	--careful	--phred-offset	33	-o	/home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ728	
+
+System information:
+  SPAdes version: 4.3.0
+  Python version: 3.14.9
+  OS: Linux-7.2.14-arch1-1-x86_64-with-glibc2.44
+
+Output dir: /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ728
+Mode: read error correction and assembling
+Debug mode is turned OFF
+
+Dataset parameters:
+  Standard mode
+  For multi-cell/isolate data we recommend to use '--isolate' option; for single-cell MDA data use '--sc'; for metagenomic data use '--meta'; for RNA-Seq use '--rna'.
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/01_fastp/NZ728_R1.fastq.gz']
+      right reads: ['/home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/01_fastp/NZ728_R2.fastq.gz']
+      interlaced reads: not specified
+      single reads: not specified
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset: 33
+  Corrected reads will be compressed
+Assembly parameters:
+  k: automatic selection based on read length
+  Repeat resolution is enabled
+  Mismatch careful mode is turned ON
+  MismatchCorrector will be used
+  Coverage cutoff is turned OFF
+  Assembly graph output will use GFA v1.2 format
+Other parameters:
+  Dir for temp files: /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ728/tmp
+  Threads: 8
+  Memory limit (in Gb): 16
+

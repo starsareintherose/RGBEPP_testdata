@@ -1,0 +1,5 @@
+
+=== Error correction and assembling warnings:
+ * 0:00:01.758     3M / 728M  WARN    General                 (kmer_coverage_model.cpp   : 219)   Too many erroneous kmers, the estimates might be unreliable
+ * 0:00:01.639     2M / 759M  WARN    General                 (simplification.cpp        : 517)   The determined erroneous connection coverage threshold may be determined improperly
+======= Warnings saved to /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/EG30/warnings.log

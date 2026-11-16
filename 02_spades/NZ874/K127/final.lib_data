@@ -1,0 +1,87 @@
+ñ(---
+max read length: 301
+nomerge max read length: 301
+average read length: 225.416
+average coverage: 2.37297
+libraries:
+  - type:            paired-end
+    number:          1
+    orientation:     fr
+    left reads:
+      - '/home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ874/corrected/NZ874_R1.fastq00.0_0.cor.fastq.gz'
+    right reads:
+      - '/home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ874/corrected/NZ874_R2.fastq00.0_0.cor.fastq.gz'
+    single reads:
+      - '/home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ874/corrected/NZ874_R_unpaired00.0_0.cor.fastq.gz'
+    data:
+      unmerged read length: 301
+      merged read length: 0
+      insert size mean: 531.567
+      insert size deviation: 119.53
+      insert size left quantile: 378
+      insert size right quantile: 667
+      insert size median: 534
+      insert size mad: 81
+      insert size distribution: { 145: 3, 221: 1, 233: 1, 241: 1, 249: 2, 
+                                  262: 1, 283: 2, 293: 1, 297: 1, 312: 1, 
+                                  314: 1, 321: 1, 323: 2, 330: 1, 337: 3, 
+                                  338: 1, 340: 2, 343: 2, 346: 1, 350: 1, 
+                                  353: 2, 356: 1, 357: 1, 362: 1, 368: 1, 
+                                  370: 2, 372: 2, 378: 4, 381: 4, 383: 4, 
+                                  392: 2, 394: 1, 395: 1, 398: 2, 408: 1, 
+                                  409: 1, 410: 1, 413: 1, 414: 1, 421: 2, 
+                                  426: 1, 427: 2, 432: 1, 433: 1, 434: 2, 
+                                  435: 4, 437: 1, 438: 1, 439: 1, 444: 1, 
+                                  446: 1, 447: 2, 448: 1, 450: 1, 451: 1, 
+                                  452: 1, 453: 1, 454: 2, 456: 1, 457: 2, 
+                                  458: 2, 459: 2, 462: 1, 463: 3, 464: 1, 
+                                  465: 1, 467: 1, 468: 4, 469: 1, 470: 1, 
+                                  472: 4, 473: 2, 474: 3, 477: 3, 479: 1, 
+                                  480: 1, 481: 2, 482: 1, 484: 1, 486: 1, 
+                                  487: 1, 488: 4, 490: 2, 491: 2, 492: 1, 
+                                  493: 2, 496: 4, 498: 1, 499: 1, 500: 1, 
+                                  501: 3, 502: 4, 503: 3, 504: 1, 505: 2, 
+                                  506: 2, 507: 2, 508: 1, 511: 2, 513: 2, 
+                                  514: 1, 515: 1, 516: 2, 517: 7, 518: 2, 
+                                  519: 1, 520: 1, 522: 3, 525: 3, 526: 4, 
+                                  531: 1, 532: 1, 533: 5, 534: 1, 535: 1, 
+                                  536: 5, 537: 1, 538: 1, 539: 2, 540: 2, 
+                                  541: 2, 542: 1, 543: 3, 544: 1, 545: 1, 
+                                  546: 2, 547: 1, 548: 1, 549: 1, 550: 2, 
+                                  552: 3, 553: 2, 556: 1, 557: 2, 559: 1, 
+                                  560: 3, 561: 2, 563: 1, 565: 3, 566: 2, 
+                                  567: 2, 568: 1, 569: 1, 570: 1, 571: 2, 
+                                  573: 3, 576: 1, 577: 1, 578: 2, 580: 6, 
+                                  582: 3, 585: 6, 586: 1, 589: 4, 590: 2, 
+                                  591: 2, 592: 2, 593: 2, 595: 1, 596: 1, 
+                                  597: 1, 598: 1, 599: 2, 600: 2, 601: 2, 
+                                  602: 1, 603: 1, 604: 2, 605: 1, 606: 1, 
+                                  607: 1, 608: 1, 609: 2, 611: 1, 614: 3, 
+                                  617: 3, 619: 1, 620: 3, 623: 1, 624: 1, 
+                                  625: 2, 626: 1, 628: 3, 629: 1, 631: 1, 
+                                  632: 1, 633: 2, 634: 3, 637: 2, 639: 2, 
+                                  642: 1, 644: 1, 646: 1, 647: 2, 651: 1, 
+                                  652: 1, 653: 1, 655: 3, 659: 1, 661: 2, 
+                                  663: 1, 664: 3, 665: 2, 666: 1, 667: 1, 
+                                  668: 1, 674: 1, 681: 2, 682: 1, 685: 1, 
+                                  688: 2, 694: 1, 697: 1, 700: 1, 702: 1, 
+                                  704: 1, 706: 1, 708: 1, 710: 1, 717: 1, 
+                                  718: 1, 723: 1, 724: 1, 725: 1, 732: 1, 
+                                  738: 2, 741: 2, 753: 1, 759: 1, 768: 2, 
+                                  769: 1, 791: 1, 795: 1, 809: 1, 815: 1, 
+                                  821: 1, 822: 1, 860: 1, 895: 1, 923: 1 }
+      pi threshold:    0
+      binary reads info:
+        binary converted: true
+        bin reads info file: '/home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ874/.bin_reads/INFO_0'
+        paired read prefix: '/home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ874/.bin_reads/paired_0'
+        merged read prefix: '/home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ874/.bin_reads/merged_0'
+        single read prefix: '/home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ874/.bin_reads/single_0'
+        chunk num:       8
+      single reads mapped: false
+      library index:   0
+      number of reads: 2441
+      total nucleotides: 550240
+      read cloud info:
+        fragment length distribution: {  }
+...

@@ -1,0 +1,7 @@
+"bwa": "/usr/bin/spades-bwa"
+"dataset": "/home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/EG98/input_dataset.yaml"
+"log_filename": "log.properties"
+"max_nthreads": !!int "8"
+"output_dir": "/home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/EG98/mismatch_corrector/contigs"
+"strategy": "mapped_squared"
+"work_dir": "/home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/EG98/tmp/corrector_7ckklwqf"

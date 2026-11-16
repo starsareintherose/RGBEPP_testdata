@@ -1,0 +1,6 @@
+
+=== Error correction and assembling warnings:
+ * 0:00:10.945     4M / 553M  WARN    General                 (kmer_coverage_model.cpp   : 328)   Valley value was estimated improperly, reset to 9
+ * 0:00:11.070     4M / 553M  WARN    General                 (simplification.cpp        : 517)   The determined erroneous connection coverage threshold may be determined improperly
+ * 0:00:02.728     4M / 570M  WARN    General                 (kmer_coverage_model.cpp   : 328)   Valley value was estimated improperly, reset to 7
+======= Warnings saved to /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ728/warnings.log

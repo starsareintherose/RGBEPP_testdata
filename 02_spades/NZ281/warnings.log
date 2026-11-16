@@ -1,0 +1,11 @@
+
+=== Error correction and assembling warnings:
+ * 0:00:07.107     6M / 448M  WARN    General                 (kmer_coverage_model.cpp   : 328)   Valley value was estimated improperly, reset to 3
+ * 0:00:07.319     6M / 448M  WARN    General                 (simplification.cpp        : 517)   The determined erroneous connection coverage threshold may be determined improperly
+ * 0:00:01.630     5M / 507M  WARN    General                 (kmer_coverage_model.cpp   : 219)   Too many erroneous kmers, the estimates might be unreliable
+ * 0:00:01.554     6M / 492M  WARN    General                 (kmer_coverage_model.cpp   : 328)   Valley value was estimated improperly, reset to 5
+ * 0:00:01.767     6M / 519M  WARN    General                 (kmer_coverage_model.cpp   : 328)   Valley value was estimated improperly, reset to 2
+ * 0:00:03.907     5M / 534M  WARN    General                 (kmer_coverage_model.cpp   : 328)   Valley value was estimated improperly, reset to 8
+ * 0:00:03.908     5M / 534M  WARN    General                 (kmer_coverage_model.cpp   : 367)   Failed to determine erroneous kmer threshold. Threshold set to: 8
+ * 0:00:04.669     6M / 534M  WARN    General                 (pair_info_count.cpp       : 203)   Estimated mean insert size 322.206 is very small compared to read length 301
+======= Warnings saved to /home/guoyi/Downloads/PhD/rgbepp/RGBEPP/testdata/02_spades/NZ281/warnings.log
